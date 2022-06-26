@@ -76,11 +76,7 @@ export const Subscribe = () => {
             </div>
          </div>
 
-         <img
-            src='/src/assets/code-mockup.png'
-            className='mt-10'
-            alt='Code Ilustration'
-         />
+         <div className='w-full max-w-[1216px] min-h-[650px] bg-codeBg bg-cover bg-no-repeat'></div>
       </div>
    );
 };

@@ -1,7 +1,6 @@
-import { gql, useMutation } from '@apollo/client';
 import { useState, FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Logo } from '../components/Logo';
+import { IgniteLogo } from '../components/IgniteLogo';
 import { useCreateSubscriberMutation } from '../graphql/generated';
 
 export const Subscribe = () => {
@@ -29,7 +28,7 @@ export const Subscribe = () => {
       <div className='min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center'>
          <div className='w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto'>
             <div className='max-w-[640px]'>
-               <Logo />
+               <IgniteLogo />
 
                <h1 className='mt-8 text-[2.5rem] leading-tight'>
                   Construa uma{' '}

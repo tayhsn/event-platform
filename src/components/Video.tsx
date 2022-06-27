@@ -1,3 +1,5 @@
+import { useGetLessonBySlugQuery } from '../graphql/generated';
+import { Footer } from './Footer';
 import { DefaultUi, Player, Youtube } from '@vime/react';
 import {
    CaretRight,
@@ -7,8 +9,6 @@ import {
 } from 'phosphor-react';
 
 import '@vime/core/themes/default.css';
-import { useGetLessonBySlugQuery } from '../graphql/generated';
-import { Footer } from './Footer';
 
 interface VideoProps {
    lessonSlug: string;
@@ -24,8 +24,7 @@ export const Video = (props: VideoProps) => {
    if (!data || !data.lesson) {
       return (
          <div className='flex-1'>
-            <p>Carregando....</p>
-            {/* TODO: IMPROVE LAYOUT */}
+            <div className='h-full w-full max-w-[1100px] max-h-[60vh] aspect-video animate-pulse'></div>
          </div>
       );
    }
